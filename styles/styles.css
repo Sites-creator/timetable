@@ -2,9 +2,9 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  cursor: pointer;
+  cursor: none;
   grid-auto-flow: row;
-  background-color: antiquewhite;
+
   grid-template-areas:
     ". . . . . ."
     ". . . . . ."
@@ -13,35 +13,87 @@
     ". . . . . .";
 }
 
-.lesson:hover {
-  background-color: darkgreen;
+.d {
+  background-color: #f2f2f2;
 }
 
-.day:hover {
+.pn:hover {
   background-color: darkorange;
 }
-.time:hover {
-  background-color: rgb(30, 210, 198);
+
+.vt:hover {
+  background-color: gold;
 }
 
-html,
-body,
+.sr:hover {
+  background-color: greenyellow;
+}
+
+.cht:hover {
+  background-color: rgb(60, 206, 239);
+}
+
+.pt:hover {
+  background-color: dodgerblue;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: "Copperplate", sans-serif;
+}
+
+.topnav .secreta {
+  color: #333;
+  float: right;
+  cursor: default;
+}
+
+.topnav .secreta:hover {
+  color: #f2f2f2;
+  background-color: #333;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+}
+
+/*.day:hover {
+  background-color: darkorange;
+}*/
+
 .timetable {
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 75%;
   margin: auto;
-  margin-top: 3em;
+  margin-top: 5em;
 }
 
 /* For presentation only, no need to copy the code below */
 
 .timetable * {
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
   position: relative;
 }
 
 body {
-  background-color: blue;
+  /*background: url(../img/background1.jpeg);
+  background-size: cover;*/
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  background-color: yellow; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, yellow, chocolate);
 }
 
 .time,
@@ -52,12 +104,46 @@ body {
   font-size: larger;
 }
 
-.day {
+.day,
+.lesson,
+.time {
   padding: 27px 0;
   font-family: "Lucida Console", "Courier New", sans-serif;
   font-size: 29px;
 }
 
-.none:hover {
+.none:hover,
+.time:hover {
   background-color: tomato;
+  color: aliceblue;
+}
+
+.time,
+.lesson {
+  font-size: 20px;
+  padding: 30px 0;
+}
+
+ff {
+  height: 200px;
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, red, yellow);
+}
+
+footer {
+  margin: 1em 0;
+  padding: 1.5em 0;
+}
+
+.footer {
+  margin-top: 20px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-family: "Copperplate", fantasy;
+  cursor: cell;
 }
