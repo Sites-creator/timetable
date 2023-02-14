@@ -1,0 +1,63 @@
+.timetable {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  cursor: pointer;
+  grid-auto-flow: row;
+  background-color: antiquewhite;
+  grid-template-areas:
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . ."
+    ". . . . . .";
+}
+
+.lesson:hover {
+  background-color: darkgreen;
+}
+
+.day:hover {
+  background-color: darkorange;
+}
+.time:hover {
+  background-color: rgb(30, 210, 198);
+}
+
+html,
+body,
+.timetable {
+  height: 90%;
+  width: 90%;
+  margin: auto;
+  margin-top: 3em;
+}
+
+/* For presentation only, no need to copy the code below */
+
+.timetable * {
+  border: 1px solid red;
+  position: relative;
+}
+
+body {
+  background-color: blue;
+}
+
+.time,
+.day,
+.lesson {
+  text-align: center;
+  padding: 10px 0;
+  font-size: larger;
+}
+
+.day {
+  padding: 27px 0;
+  font-family: "Lucida Console", "Courier New", sans-serif;
+  font-size: 29px;
+}
+
+.none:hover {
+  background-color: tomato;
+}
