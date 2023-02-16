@@ -1,0 +1,36 @@
+<script>
+  function play() {
+    var audio = document.getElementById("myaudio");
+    audio.play();
+    document.getElementById("play").style.display = "none";
+    document.getElementById("pause").style.display = "block";
+  }
+
+  function pause() {
+    var audio = document.getElementById("myaudio");
+    audio.pause();
+
+    document.getElementById("play").style.display = "block";
+    document.getElementById("pause").style.display = "none";
+  }
+</script>
+<link rel="stylesheet" href="e.css" />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+/>
+<audio volume id="myaudio" loop autoplay >
+  <source src="Alan Walker & Imanbek - Sweet Dreams.mp3" type="audio/mpeg" />
+</audio>
+
+<input
+  class="button"
+  style="display: none"
+  type="button"
+  value="&#9658"
+  id="play"
+  onclick="play()"
+/>
+<input class="fa fa-pause button" type="button" value="&#xf04c;" id="pause" onclick="pause()" />
+
+

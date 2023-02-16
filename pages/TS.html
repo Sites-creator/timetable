@@ -3,15 +3,70 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="../styles/card.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
   <body>
     <header>
       <div class="topnav">
-        <a href="../index.html">Go back</a>
-        <a href="pages/TTS.html" class="tsecret">TTS</a>
+        <a href="TTS.html" class="top">TTS</a>
+        <a href="#" class="active">Home</a>
+        <a href="Text.html">Book online</a>
+        <a href="video.html">Videoplayer</a>
+        <div class="dropdown">
+          <button class="dropbtn">
+            Go back
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="../index.html">Petro</a>
+            <a href="Andrew.html">Andrew</a>
+            <a href="Mattew.html">Mattew</a>
+          </div>
+        </div>
       </div>
     </header>
+    <main>
+      <div class="cards">
+        <a href="Videoplayer.html">
+          <div class="card">
+            <div class="card-image"></div>
+            <div class="card-text">
+              <h2>Videoplayer</h2>
+              <p>
+                Ви зможете побачити купу крутих,смішних а саме головне
+                українських відео в ньому. Тому швиденько заходьте, натискайте
+                сюди!!! Щиро запрошуємо!!!
+              </p>
+            </div>
+            <div class="card-footer">
+              <p>Created by Petro</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="cards">
+        <a href="Videoplayer.html">
+          <div class="card">
+            <div class="card-image2"></div>
+            <div class="card-text">
+              <h2>Book</h2>
+              <p>
+                Тут ви зможете прочитати дуже печальну історію про хлопця якого
+                звали Федько-Халамидник. Дуже повчальна та сумна історія.
+                Рекомендую!
+              </p>
+            </div>
+            <div class="card-footer2">
+              <p>Created by Petro</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </main>
+    <footer>
+      <audio src="../Time To Leaf.mp3" autoplay loop></audio>
+    </footer>
   </body>
 </html>
