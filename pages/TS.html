@@ -6,14 +6,10 @@
     <link rel="stylesheet" href="../styles/card.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Супер Секретно</title>
-    <link
-      rel="shortcut icon"
-      href="../img/timetableIcon.png"
-      type="image/png"
-    />
+    <link rel="shortcut icon" href="../img/spy.png" type="image/png" />
   </head>
   <body>
-    <audio src="../Music.mp3" autoplay loop></audio>
+    <audio id="myAudio" src="../Music.mp3" autoplay loop></audio>
     <header>
       <div class="topnav">
         <a href="TTS.html" class="top">TTS</a>
@@ -72,5 +68,9 @@
       </div>
     </main>
     <footer></footer>
+    <script>
+      var vid = document.getElementById("myAudio");
+      vid.volume = 0.5;
+    </script>
   </body>
 </html>
